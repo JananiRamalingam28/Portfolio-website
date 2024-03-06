@@ -1,0 +1,234 @@
+<html>
+    <head>
+        {% load static %}
+        {% csrf_token %}
+        
+        <script src="https://kit.fontawesome.com/c08eb42585.js " crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=poppins:300,400,500,700,900&display=swap');
+            body{
+               background-image: url('/static/p1.png');
+               background-repeat: no-repeat;
+               background-size: cover;
+               width: 100%;
+               height: 100%;
+               opacity: 100%;
+               
+               box-sizing: border-box;
+               font-family: 'poppins',sans-serif;
+              
+            }
+             nav .nav{
+            list-style-type: none;
+            font-size: 23px;
+            margin-left: 65%;
+            margin-top: 3%;
+        
+        }
+        nav .nav li{
+            display: inline-block;
+           
+        }
+         nav .nav li a{
+            color:white;
+           
+            margin-right: 2rem;
+            text-decoration: none;
+      }
+
+        nav .nav li a:hover{
+            color:#0ef;
+        }
+       .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            margin-left: -15%;
+        }
+        .container .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .contactInfo .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+         }
+
+         .container .contactinfo .box .icon{
+             min-width: 60px;
+             height: 60px;
+             background: #fff;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 50%;
+             font-size: 22px;
+             color: black;
+         }
+
+         .container .contactInfo .box .text{
+             display: flex;
+             margin-left: 20px;
+             font-size: 16px;
+             color: #fff;
+             flex-direction: column;
+             font-weight: 350;
+
+             
+
+         }
+         .container .contactInfo .box .text h3{
+            font-weight: 500;
+            color:#00bcd4;
+            margin-top: 6%;
+            
+         }
+          .text p{
+            margin-top: -5%;
+            letter-spacing: 0.5px;
+         }
+         .contactForm{
+             width: 30%;
+             padding: 30px;
+             background: rgb(174, 236, 241);
+             border-radius: 20%;
+             margin-right: 10%;
+             margin-left: 55%;
+             margin-top: -25%;
+             
+            
+             
+         }
+
+         .contactForm h2{
+             font-size: 28px;
+             color: black;
+             font-weight: 500;
+             text-align: center;
+             font-family: poppins;
+         }
+         .contactForm .inputBox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+
+         }
+
+         .contactForm .inputBox input,
+         .contactForm .inputBox textarea{
+             width: 100%;
+             padding:5px 0;
+             font-size: 16px;
+             margin: 10px 0;
+             border: none;
+             border-bottom: 2px solid #333;
+             outline: none;
+             resize: none;
+ }
+
+ 
+ 
+
+ .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background:palevioletred;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding:5px ;
+    font-size: 18px;
+    text-align: center;
+    font-family: cursive;
+    border-radius: 35px;
+    margin-left: 30%;
+
+ }
+
+ 
+ ::placeholder{
+    color: black;
+    font-size: 15px;
+    font-family:cursive;
+
+ }
+
+
+        </style>
+    </head>
+    <body >
+        <nav>
+                    
+            <b> <ul class="nav">
+                <li><a href="/homi">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/skill">SKILLS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul></nav></b> 
+
+            <section class="contact">
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>5/275 Thiruvalluvar nagar,<br>Tiruvarur<br>614704</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>6350891254</p>
+                            </div>
+                        </div>
+                         
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>janani2873@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactForm">
+                    <form action="addData" method="POST" autocomplete="off">
+                        {% csrf_token %}
+                       
+                       <h2> <b>Send Message</b></h2>
+                        <div class="inputBOX">
+                            <input type="text" name="Fullname" placeholder="Full Name" required="required">
+                           
+                        </div>
+
+                        <div class="inputBOX">
+                            <input type="text" name="Email" placeholder="Email" required="required">
+                            
+                        </div>
+
+                        <div class="inputBOX">
+                           <textarea required="required" placeholder="Type your Message...." name="Message"></textarea>
+                           
+                        </div>
+
+                        <div class="inputBOX">
+                            <input type="submit" name="" value="send" >
+                            
+                        </div>
+
+
+                    </form>
+                </div>
+            
+            </section>
+    </body>
+</html>

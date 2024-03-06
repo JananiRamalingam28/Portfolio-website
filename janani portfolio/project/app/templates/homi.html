@@ -1,0 +1,192 @@
+<html>
+    <head>
+        {% load static %}
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+      
+      <style>
+        
+       
+        .h1{
+            width:100%;
+            height:100%;
+        }
+        .h2{
+            width:1280px;
+            max-width: 95%;
+            margin:0 auto;
+            padding: 0 20px;
+        }
+        header{
+            padding: 40px 0 30px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+        }
+        .logo{
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .a1 {
+           text-decoration: none;
+           display: inline-block;
+           padding: 8px 16px;
+           margin-left:10%;
+           font-size: 20px;
+           font-weight: 1000;
+           margin-top: 5%;
+           display: inline-flex;
+        }
+
+        .a1:hover {
+           background-color: #0ef;
+           color:black;
+           text-decoration: none;
+        }
+        
+         .next {
+        background-color:white;
+        color: black;
+ 
+        }
+         .round {
+        border-radius: 75%;
+      }
+        
+
+        nav .nav{
+            list-style-type: none;
+            font-size: 23px;
+        }
+        nav .nav li{
+            display: inline-block;
+        }
+         nav .nav li a{
+            color:white;
+         
+            margin-right: 2rem;
+            text-decoration: none;
+      }
+
+        nav .nav li a:hover{
+            color:#0ef;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 5rem;
+            margin-left: -6%;
+        }
+        .container .pic{
+            width: 250px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid ;
+            box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.4);
+        }
+        .pic img{
+            width:  100%;
+            height: 100%;
+            border-radius: 100%;
+            transition: 0.5s;
+            }
+       .pic img:hover{
+               transform: scale(2.4);
+            }
+        .home-content{
+            max-width: 500px;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .home-content h5{
+            color: #e5e5e5;
+            font-size: 20px;
+        }
+
+        .home-content h5 span{
+            color:#0ef;
+            font-size: 26px;
+        }
+
+       .home-content h1{
+        color: #0ef;
+       }
+
+       .home-content p{
+        color: #e5e5e5;
+        font-size: 20px;
+       }
+
+    .social-icon{
+              color:white;
+              transition: color 0.2s;
+              text-decoration: none;
+              font-size: 47px;
+              display: flex;
+              flex-direction: column;
+
+             
+          }
+
+          .social-icon:hover{
+            color:#0ef
+          }
+
+</style>
+</head>
+<body style="background-color: black;">
+    <div class="h1">
+        <div class="h2">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">JananiRamalingam</div>
+                    <a href="#" class=" a1 next round" >JR</a>
+                </div>
+                <nav>
+                    
+                    <ul class="nav">
+                        <li><a href="/homi">HOME</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/skill">SKILLS</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                    </ul></nav> 
+                    <div class="container">
+                        <div class="pic">
+                        <img src="{% static 'janu photo2.jpeg' %}">
+                    </div>
+            
+                    <div class="home-content">
+                        <h5>Hello I'm <span class="input">Fresher</span></h5>
+                        <h1>JananiRamalingam</h1>
+                        <p> I'm Fresher Seeking to transition from a successful career in FULL STACK DEVELOPER role.....</p> </div>
+                
+                </div>  
+                
+                <div>
+                    <a class="social-icon" href="https://linkedin.com/Janani ramalingam" target="_blank" style="margin-left:36rem; margin-top: -10%;"  >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+              
+                    <a class="social-icon" href="https://youtube.com/Janani ramalingam" target="_blank" style="margin-left:40rem;margin-top: -6%;" >
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+              
+                    <a class="social-icon" href="https://github.com/JananiRamalingam28" target="_blank" style="margin-left:44rem;margin-top: -6.6%;">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                </div>
+                    </header>
+        </div>
+    </div>
+</body>

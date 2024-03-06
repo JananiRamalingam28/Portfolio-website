@@ -1,0 +1,476 @@
+<html>
+    <head>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <title>My SKILLS</title>
+        <style>
+             @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+           *{
+            box-sizing: border-box;
+            font-family: 'Roboto',sans-serif;
+           }
+           
+             body{
+                background-color:black;
+                color:white;
+                
+            }
+            nav .nav{
+            list-style-type: none;
+            font-size: 23px;
+            margin-left: 65%;
+            margin-top: 3%;
+
+        }
+        nav .nav li{
+            display: inline-block;
+           
+        }
+         nav .nav li a{
+            color:white;
+           
+            margin-right: 2rem;
+            text-decoration: none;
+      }
+
+        nav .nav li a:hover{
+            color:#0ef;
+        }
+
+            
+            section{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .container1{
+                width:600px;
+                height: 500px;
+                padding: 75px 90px;
+                margin-left: -35px;
+            }
+
+            .heading{
+                text-align:center;
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-thickness:5px ;
+                margin-bottom: 70px;
+                margin-top: -8%;
+                font-size: 30px;
+            }
+            .bar{
+                font-size: 23px;
+
+            }
+
+            .progress-bar{
+                background-color: grey;
+                width: 400px;
+                height: 10px;
+                border-radius: 5px;
+                margin-left: 10px;
+            }
+            .progress-bar div{
+                height: 10px;
+                border-radius: 5px;
+                width: 0px;
+               
+            }
+            .progress-bar div span{
+                height: 30px;
+                width: 30px;
+                border-radius: 80%;
+                
+                float:right;
+                margin-top: -10px;
+                margin-right: -20px;
+                color: black ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10px;
+                font-weight: 500;
+            }
+            .html{
+                background-color: #0ef;
+                animation: html 1s linear forwards;
+            }
+            .css{
+                background-color:#0ef;
+                animation: css 1s linear forwards;
+            }
+            .bootstrap{
+                background-color: #0ef;
+                animation: bootstrap 1s linear forwards;
+            }
+            .javascript{
+                background-color: #0ef;
+                animation: javascript 1s linear forwards;
+            }
+
+            .python{
+                background-color: #0ef;
+                animation: python 1s linear forwards;
+            }
+            .django{
+                background-color: #0ef;
+                animation: django 1s linear forwards;
+            }
+
+            .html span{
+                border:1px solid black;
+                background-color: orange;
+            }
+            .css span{
+                border:1px solid black;
+                background-color: blue;
+            }
+            .bootstrap span{
+                border:1px solid black;
+                background-color: red;
+            }
+            .javascript span{
+                border:1px solid black;
+                background-color: yellow;
+            }
+            .python span{
+                border:1px solid black;
+                background-color:skyblue;
+            }
+            .django span{
+                border:1px solid black;
+                background-color: wheat;
+            }
+          
+            @keyframes html{
+                100%{
+                    width:89%;
+                }
+            }
+            
+            @keyframes css{
+                100%{
+                    width:90%;
+                }
+            }
+            @keyframes bootstrap{
+                100%{
+                    width:80%;
+                }
+            }
+            @keyframes javascript
+            {
+                100%{
+                    width:50%;
+                }
+            }
+            @keyframes python{
+                100%{
+                    width:75%;
+                }
+            }
+            @keyframes django{
+                100%{
+                    width:60%;
+                }
+            }
+
+        .container{
+            position: relative;
+            display: flex;
+            margin-left: 37%;
+            margin-top: 8%;
+            
+           
+            gap:32.5px;
+        }
+
+        .container .card{
+            position: relative;
+            width: 200px;
+            height: 250px;
+            background: #2a2a2a;
+            
+           
+          
+
+        }
+
+        .container .card .percent{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-left: 30px;
+            margin-top: 34px;
+           
+            
+        } 
+
+        .container .card .percent svg{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            transform: rotate(270deg);
+            
+        }
+        .container .card .percent svg circle{
+            width: 100%;
+            height: 100%;
+            fill:transparent;
+            stroke-width: 2;
+            stroke:grey;
+            transform: translate(5px,5px);
+        }
+        .container .card .percent svg circle:nth-child(2){
+            stroke: var(--clr);
+            stroke-dasharray: 440;
+            stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+            opacity: 0;
+            animation: fadeIn 1s linear forwards ;
+            animation-delay:2.5s;
+           
+        }
+        @keyframes fadeIn{
+            0%{
+                opacity:0;
+            }
+            100%{
+                opacity:1;
+            }
+        }
+
+        .dot{
+            position:absolute;
+            inset:5px;
+            z-index:10;
+             animation: animateDot 2s linear forwards;
+        }
+
+        @keyframes animateDot
+        {
+            0%
+            {
+                transform: rotate(0deg); 
+            }
+            100%
+            {
+                transform: rotate(calc(3.6deg * var(--num)));
+            }
+        }
+        .dot::before{
+            content: '';
+            position: absolute;
+            top: -2.5px;
+            left: 60px;
+            transform: translate(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--clr);
+            box-shadow: 0 0 10px var(--clr),
+                        0 0 30px var(--clr);
+        }
+
+        .number{
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column  ;
+            opacity: 0;
+            animation: fadeIn 1s linear forwards ;
+            animation-delay:2.5s;
+           
+        }
+
+        .number h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            font-size: 2.5em;
+        }
+
+        .number h2 span{
+            font-weight: 300;
+            color:white;
+            font-size: 0.5em;
+}
+
+        p {
+        font-weight: 400;
+        font-size: 0.75em;
+        letter-spacing:2px ;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.75);
+        opacity: 0;
+        animation: fadeIn 1s linear forwards ;
+        animation-delay:2.5s;
+        text-align: center;
+        justify-content: center;
+       }
+
+     .head{
+        margin-top: -30%;
+        margin-left: 53%;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness:5px ;
+        font-size: 30px;
+
+     }
+
+
+
+            
+            
+            
+
+          
+
+        </style>
+    </head>
+  
+    <body>
+        <nav>
+                    
+            <ul class="nav"><b>
+                <li><a href="/homi">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/skill">SKILLS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul></b></nav> 
+            <section>
+                <div class="container1" id="skills">
+                    <h1 class="heading">Technical skills</h1>
+                    <div class="Technical-bars">
+                        <div class="bar"><i class='bx bxl-html5' style="color: orange;"></i>
+                        <div class="indfo">
+                            <span >HTML</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                           <div class="html"> <span>89%</span></div>
+                        
+                    </div><br>
+
+                    <div class="bar"><i class='bx bxl-css3' style="color: blue;"></i>
+                        <div class="indfo">
+                            <span>css</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="css"> <span>90%</span></div>
+                         </div>
+                    </div><br>
+
+                    <div class="bar"><i class='bx bxl-bootstrap' style="color: red;" ></i>
+                        <div class="indfo">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="bootstrap"> <span>80%</span></div>
+                         </div>
+                    </div><br>
+
+                    <div class="bar"><i class='bx bxl-javascript'style="color: yellow;" ></i>
+                        <div class="indfo">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="javascript"> <span>50%</span></div>
+                         </div>
+                    </div><br>
+
+                    <div class="bar"><i class='bx bxl-python'style="color: skyblue;" ></i>
+                        <div class="indfo">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="python"> <span>75%</span></div>
+                         </div>
+                    </div><br>
+
+                    <div class="bar"><i class='bx bxl-django'style="color: wheat;" ></i>
+                        <div class="indfo">
+                            <span>Django</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="django"> <span>60%</span></div>
+                         </div>
+                    </div><br><br><br><br>
+
+                </div>
+                </div>
+            </section>
+
+            <h1 class="head">Professional skills</h1>
+            <div class="container">
+                
+                <div class="card">
+                <div class="percent"style="--clr:green;--num:85;">
+                    <div class="dot"></div>
+                 <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                 <div class="number">
+                    <h2>85<span>%</span></h2>
+                    </div>
+                 <p>Communication</p>
+                </div>
+            </div>
+                 
+            <div class="card">
+                <div class="percent"style="--clr:#ff00be;--num:90;">
+                    <div class="dot"></div>
+                 <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                 <div class="number">
+                    <h2>90<span>%</span></h2>
+                    </div>
+                 <p>Teamwork</p>
+                </div>
+            </div>
+    
+                <div class="card">
+                <div class="percent"style="--clr:yellow;--num:75;">
+                    <div class="dot"></div>
+                 <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                 <div class="number">
+                    <h2>75<span>%</span></h2>
+                    </div>
+                 <p>Problem solving</p>
+                </div>
+            </div>
+    
+    
+            <div class="card">
+                <div class="percent"style="--clr:skyblue;--num:87;">
+                    <div class="dot"></div>
+                 <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                 </svg>
+                <div class="number">
+                    <h2>87<span>%</span></h2>
+                </div>
+                 <p>Creativity</p>
+                </div>
+            </div>
+               
+            
+        
+       
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <style>
+             #p{
+                font-size: 500%;
+                text-align: center;
+                letter-spacing:-7.9;
+                margin-top: 5.5%;
+                position: fixed;
+                margin-left: 35%;
+             }
+
+
+.loader {
+  --d:17px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  color: black;
+  box-shadow: 
+    calc(1*var(--d))      calc(0*var(--d))     0 0,
+    calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+    calc(0*var(--d))      calc(1*var(--d))     0 1.5px,
+    calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 2px,
+    calc(-1*var(--d))     calc(0*var(--d))     0 2.5px,
+    calc(-0.707*var(--d)) calc(-0.707*var(--d))0 3px,
+    calc(0*var(--d))      calc(-1*var(--d))    0 3.5px;
+  animation: ani 3s linear forwards ;
+  margin-left: 43%;
+  margin-top: 5%;
+}
+@keyframes ani {
+  100% {transform: rotate(6turn)}
+}
+.fade{
+    opacity:0;
+    animation: fadein 1.8s linear forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.d{ 
+            position: relative; 
+            animation: geeks 3s linear both; 
+            border:3px solid black;
+            width: 10%;
+            background-color: orange;
+            text-align: center;
+            border-radius: 10px;
+            text-shadow: 10px;
+            top:-1%;
+            left:30%;
+            
+          } 
+         
+          @keyframes geeks{
+                0%{
+                    width:5%;
+                }
+                100%{
+                    width: 10%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="loader"></div> 
+     <div class="d"><b>LOADING...</b></div> 
+     <div class="fade">
+     <p id="p"><b><span style="color:blue">P</span>
+        <span style="color:green">O</span>
+        <span style="color:red">R</span>
+        <span style="color:blue">T</span>
+        <span style="color:red">F</span>
+        <span style="color:green">O</span>
+        <span style="color:red">L</span>
+        <span style="color:blue">I</span>
+        <span style="color:green">O</span></b>
+      </p>
+    </div>
+
+
+    </body>
+</html>
